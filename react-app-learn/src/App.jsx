@@ -2,6 +2,7 @@ import Header from "./Header.jsx"
 import Footer from "./Footer.jsx";
 import Food from "./Food.jsx"
 import Card from "./Card.jsx";
+import Student from "./Student.jsx";
 
 function App() {
 
@@ -12,6 +13,12 @@ function App() {
       <Card></Card>
       <Card />
       <Card /><Card />
+
+      <Student name="Robs " age={25} isStudent={true} />
+      <Student name="Patrick " age={42} isStudent={false} />
+      <Student name="Sams " age={45} isStudent={false} />
+      <Student name="sangs " age={29} isStudent={true} />
+      <Student name="Default Props" />
       <Footer></Footer>
     </>
 

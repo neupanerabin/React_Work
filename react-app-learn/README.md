@@ -1,12 +1,45 @@
-# React + Vite
+React Props Guide
+Props
+Props (short for properties) are read-only attributes used to pass data from a parent component to a child component in React. They allow components to be dynamic and reusable by enabling data sharing.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Purpose: Share data between components.
 
-Currently, two official plugins are available:
+Usage: Props are passed to a component as attributes in JSX.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Example:
+<Component key="value" />
 
-## Expanding the ESLint configuration
+In this example, key is the prop name, and "value" is the prop value passed to the Component.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+PropTypes
+PropTypes is a mechanism in React to enforce type-checking for props, ensuring that the passed values are of the correct data type. This helps catch errors during development.
+
+Purpose: Validate the data type of props to prevent runtime errors.
+
+Usage: Define PropTypes for a component to specify the expected type of each prop.
+
+Example:
+import PropTypes from 'prop-types';
+
+MyComponent.propTypes = {
+  age: PropTypes.number
+};
+
+In this example, the age prop must be a number, and React will warn if a different type is passed.
+
+
+defaultProps
+defaultProps allows you to set default values for props in case they are not provided by the parent component. This ensures the component has fallback values to work with.
+
+Purpose: Provide default values for optional props.
+
+Usage: Define defaultProps as a static property of the component.
+
+Example:
+MyComponent.defaultProps = {
+  name: "Guest"
+};
+
+In this example, if the name prop is not passed to MyComponent, it defaults to "Guest".
+
