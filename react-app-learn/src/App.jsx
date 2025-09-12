@@ -5,6 +5,7 @@ import Card from "./Card.jsx";
 import Student from "./Student.jsx";
 import UserGreetings from "./UserGreeting.jsx";
 import List from "./List.jsx";
+import Button from "./Button.jsx";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       {fruits.length > 0 && <List items={vegetable} category="vegetable" />}
 
       <UserGreetings isLoggedIn={true} username="Robs Code" />
+      <Button />
 
       <Footer></Footer>
     </>

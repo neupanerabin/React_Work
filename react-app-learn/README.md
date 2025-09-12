@@ -46,3 +46,6 @@ In this example, if the name prop is not passed to MyComponent, it defaults to "
 
 ## Conditional Rendering 
 It allows you to control what gets rendered in your application based on certain conditions(show, hide, or chnage components)
+
+## Click event = 
+An interraction when a user clicks on a specific element. We can respond to clicks by passing a callback to the onClick event handler.
