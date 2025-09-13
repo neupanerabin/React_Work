@@ -6,6 +6,8 @@ import Student from "./Student.jsx";
 import UserGreetings from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import Button from "./Button.jsx";
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
 
 function App() {
 
@@ -40,6 +42,8 @@ function App() {
 
       <UserGreetings isLoggedIn={true} username="Robs Code" />
       <Button />
+      <MyComponent />
+      <Counter />
 
       <Footer></Footer>
     </>
