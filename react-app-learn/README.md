@@ -68,3 +68,7 @@ function MyComponent() {
 }
 
 Clicking the button updates the name state from "Guest" to "User".
+
+## Onchange ;
+event handler used primarily with form elements ex. <input>, <textarea>, <select>, <radio>
+Triggers a function every time the value of the input changes
