@@ -8,6 +8,7 @@ import List from "./List.jsx";
 import Button from "./Button.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
+import ColourPicker from "./ColourPicker.jsx"
 
 function App() {
 
@@ -44,6 +45,8 @@ function App() {
       <Button />
       <MyComponent />
       <Counter />
+
+      <ColourPicker />
 
       <Footer></Footer>
     </>
