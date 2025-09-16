@@ -9,6 +9,7 @@ import Button from "./Button.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
 import ColourPicker from "./ColourPicker.jsx"
+import UpdateObjectState from "./Objects_In_State.jsx";
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
       <Counter />
 
       <ColourPicker />
+      <UpdateObjectState />
 
       <Footer></Footer>
     </>
