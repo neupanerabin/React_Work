@@ -11,6 +11,7 @@ import Counter from "./Counter.jsx";
 import ColourPicker from "./ColourPicker.jsx"
 import UpdateObjectState from "./Objects_In_State.jsx";
 import Arrays from "./Arrays.jsx";
+import Array_Objects_Update from "./Array_Objects_Update.jsx"
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
       <ColourPicker />
       <UpdateObjectState />
       <Arrays />
+      <Array_Objects_Update />
 
       <Footer></Footer>
     </>
