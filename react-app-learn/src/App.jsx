@@ -11,7 +11,8 @@ import Counter from "./Counter.jsx";
 import ColourPicker from "./ColourPicker.jsx"
 import UpdateObjectState from "./Objects_In_State.jsx";
 import Arrays from "./Arrays.jsx";
-import Array_Objects_Update from "./Array_Objects_Update.jsx"
+import Array_Objects_Update from "./Array_Objects_Update.jsx";
+import ToDoList from "./ToDoList.jsx";
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
       <UpdateObjectState />
       <Arrays />
       <Array_Objects_Update />
+      <ToDoList />
 
       <Footer></Footer>
     </>
