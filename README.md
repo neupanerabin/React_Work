@@ -199,3 +199,46 @@ setYear((y) => y + 1);
 
 ---
 
+# 🔄 React `useEffect()` Hook
+
+The **`useEffect`** hook lets you perform **side effects** in function components.  
+It tells React to run some code when:
+
+- The component **mounts** (first render)
+- The component **re-renders**
+- Specific **state/props values change**
+- The component **unmounts** (cleanup)
+
+---
+
+## 📝 Syntax
+
+```jsx
+useEffect(function, [dependencies]);
+
+
+1. useEffect(() => {})  // Runs after every re-render
+  useEffect(() => {
+  console.log("Runs after every render");
+});
+
+2. useEffect(() => {}, [])  // Runs only on mount
+  useEffect(() => {
+  console.log("Runs only on mount (first render)");
+}, []);
+
+3. useEffect(() => {}, [value]) // Runs on mount + when value changes
+  useEffect(() => {
+  console.log("Runs on mount and whenever 'value' changes");
+}, [value]);
+
+
+### USES:
+  1. Event Listeners
+  2. DOM manipulation
+  3. Subscriptions (real-time updates)
+  4. Fetching Data from an API
+  5. Clean up when a component unmounts
+
+ 
+  

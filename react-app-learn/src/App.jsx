@@ -13,6 +13,7 @@ import UpdateObjectState from "./Objects_In_State.jsx";
 import Arrays from "./Arrays.jsx";
 import Array_Objects_Update from "./Array_Objects_Update.jsx";
 import ToDoList from "./ToDoList.jsx";
+import MyComponents from "./UseEffect.jsx";
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
       <Arrays />
       <Array_Objects_Update />
       <ToDoList />
+      <MyComponents/>
 
       <Footer></Footer>
     </>
